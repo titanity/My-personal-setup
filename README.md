@@ -1,6 +1,7 @@
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade -y
 
-sudo apt-get install gkrellm gkrellm-cpufreq synaptic gnome-system-tools gparted tightvncserver uuid-runtime mtools dosfstools nemo python xorg leafpad geany parted gnome-disk-utility yum wget qemu digikam atom krita darktable 
+sudo apt-get install gkrellm gkrellm-cpufreq synaptic gnome-system-tools gparted tightvncserver uuid-runtime mtools dosfstools 
+nemo python xorg leafpad geany parted gnome-disk-utility yum wget qemu digikam limba limba-devtools libxcb-util0 device-tree-compiler linaro-image-tools perl
 
 install a DEB package
 dpkg -i pkg.deb – (Debian / Ubuntu / Linux Mint)
