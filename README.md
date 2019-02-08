@@ -1,7 +1,8 @@
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade -y
 
-sudo apt-get install gkrellm gkrellm-cpufreq synaptic gnome-system-tools gparted tightvncserver uuid-runtime mtools dosfstools 
-nemo python xorg leafpad geany parted gnome-disk-utility yum wget qemu digikam limba limba-devtools libxcb-util0 device-tree-compiler linaro-image-tools perl
+
+sudo apt-get install gkrellm gkrellm-cpufreq synaptic gparted tightvncserver uuid-runtime mtools dosfstools 
+nemo python xorg leafpad geany parted gnome-disk-utility yum wget qemu digikam limba limba-devtools libxcb-util0 device-tree-compiler linaro-image-tools perl build-essential libc6-armel-cross libncurses5-dev git-core git-gui gitk git libssl-dev xapian-tools cryptsetup dwww menu deborphan apt-xapian-index tasksel software-properties-gtk pmount libncurses5-dev software-properties-common binfmt-support python-dbus python-debian python-parted python-apt python-yaml libssl-dev uget git-daemon-run git-cvs git-mediawiki git-svn curl vlc fakeroot libssl-dev lzop debhelper gccgo gnome-system-tools gnome-control-center gnome-disk-utility gnome-keyring gnome-menus gnome-software gnome-software-dev gnome-startup-applications
 
 install a DEB package
 dpkg -i pkg.deb – (Debian / Ubuntu / Linux Mint)
@@ -10,6 +11,37 @@ dpkg -i pkg.deb – (Debian / Ubuntu / Linux Mint)
 sudo add-apt-repository ppa:linaro-maintainers/tools
 sudo apt-get update
 sudo apt-get install linaro-image-tools
+
+Zram!
+
+Download the script and copy to /usr/bin/ folder
+sudo wget -O /usr/bin/zram.sh https://raw.githubusercontent.com/novaspirit/rpi_zram/master/zram.sh
+make file executable
+sudo chmod +x /usr/bin/zram.sh
+edit /etc/rc.local file to run script on boot
+sudo nano /etc/rc.local
+add line before exit 0
+/usr/bin/zram.sh &
+
+Katoolin!
+
+apt-get install git
+git clone https://github.com/LionSec/katoolin.git && cp katoolin/katoolin.py /usr/bin/katoolin
+chmod +x  /usr/bin/katoolin
+sudo katoolin
+
+tinkerboard overclock
+
+https://tinkerboarding.co.uk/forum/thread-654-post-3805.html#pid3805
+
+Lazy script
+
+git clone https://github.com/arismelachroinos/lscript.git
+
+Airgeddon
+
+git clone https://github.com/v1s1t0r1sh3r3/airgeddon.git
+
 
 System Info
 date – Show the current date and time
