@@ -1,6 +1,6 @@
-sudo apt-get update && upgrade
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade -y
 
-sudo apt-get install GKrellM GKrellM-cpufreq Synaptic Gnome-system-tools gparted tightvncserver software boutique uuid-runtime mtools dosfstools nemo python xorg leafpad geany udisks parted gnome-disk-utility yum apt-get wget gstreamer
+sudo apt-get install gkrellm gkrellm-cpufreq synaptic gnome-system-tools gparted tightvncserver boutique uuid-runtime mtools dosfstools nemo python xorg leafpad geany udisks parted gnome-disk-utility yum apt-get wget
 
 install a DEB package
 dpkg -i pkg.deb – (Debian / Ubuntu / Linux Mint)
