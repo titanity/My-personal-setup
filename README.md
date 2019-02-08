@@ -2,7 +2,7 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade -y
 
 
 sudo apt-get install gkrellm gkrellm-cpufreq synaptic gparted tightvncserver uuid-runtime mtools dosfstools 
-nemo python xorg leafpad geany parted gnome-disk-utility yum wget qemu digikam limba limba-devtools libxcb-util0 device-tree-compiler linaro-image-tools perl build-essential libc6-armel-cross libncurses5-dev git-core git-gui gitk git libssl-dev xapian-tools cryptsetup dwww menu deborphan apt-xapian-index tasksel software-properties-gtk pmount libncurses5-dev software-properties-common binfmt-support python-dbus python-debian python-parted python-apt python-yaml libssl-dev uget git-daemon-run git-cvs git-mediawiki git-svn curl vlc fakeroot libssl-dev lzop debhelper gccgo gnome-system-tools gnome-control-center gnome-disk-utility gnome-keyring gnome-menus gnome-software gnome-software-dev gnome-startup-applications
+nemo python xorg leafpad geany parted gnome-disk-utility yum wget qemu digikam limba limba-devtools libxcb-util0 device-tree-compiler linaro-image-tools perl build-essential libc6-armel-cross libncurses5-dev git-core git-gui gitk git libssl-dev xapian-tools cryptsetup dwww menu deborphan apt-xapian-index tasksel software-properties-gtk pmount libncurses5-dev software-properties-common binfmt-support python-dbus python-debian python-parted python-apt python-yaml libssl-dev uget git-daemon-run git-cvs git-mediawiki git-svn curl vlc fakeroot libssl-dev lzop debhelper gccgo gnome-system-tools gnome-control-center gnome-disk-utility gnome-keyring gnome-menus gnome-software
 
 install a DEB package
 dpkg -i pkg.deb – (Debian / Ubuntu / Linux Mint)
