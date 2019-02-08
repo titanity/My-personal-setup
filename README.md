@@ -283,3 +283,5 @@ sdram_freq=500
 sdram_schmoo=0x02000020
 over_voltage=6
 sdram_over_voltage=2
+
+https://github.com/TinkerBoard
