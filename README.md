@@ -1,29 +1,28 @@
-# Update Debian/Ubuntu
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade -y
+## Update Debian/Ubuntu
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade -y
 
-
+## My personal packages
 sudo apt-get install gkrellm gkrellm-cpufreq synaptic gparted tightvncserver uuid-runtime mtools dosfstools 
 nemo python xorg leafpad geany parted gnome-disk-utility yum wget qemu digikam limba limba-devtools libxcb-util0 device-tree-compiler linaro-image-tools perl build-essential libc6-armel-cross libncurses5-dev git-core git-gui gitk git libssl-dev xapian-tools cryptsetup dwww menu deborphan apt-xapian-index tasksel software-properties-gtk pmount libncurses5-dev software-properties-common binfmt-support python-dbus python-debian python-parted python-apt python-yaml libssl-dev uget git-daemon-run git-cvs git-mediawiki git-svn curl vlc fakeroot libssl-dev lzop debhelper gccgo gnome-system-tools gnome-control-center gnome-disk-utility gnome-keyring gnome-menus gnome-software initramfs-tools systemd
 
-# install a DEB package
-dpkg -i pkg.deb – (Debian / Ubuntu / Linux Mint)
-
-# linaro-image-tools in Ubuntu
+## install a DEB package
+sudo dpkg -i pkg.deb – (Debian / Ubuntu / Linux Mint)
+## linaro-image-tools in Ubuntu
 sudo add-apt-repository ppa:linaro-maintainers/tools
-sudo apt-get update
-sudo apt-get install linaro-image-tools
+sudo apt update
+sudo apt install linaro-image-tools
 
 
 
-# Zram!
+## Zram!
 
 Download the script and copy to /usr/bin/ folder
-sudo wget -O /usr/bin/zram.sh https://raw.githubusercontent.com/novaspirit/rpi_zram/master/zram.sh
+sudo wget -O /usr/bin/zram.sh https://raw.githubusercontent.com/timschumi/rpi_zram/patch/lc-all/zram.sh
 
-# make file executable
+### Make the file executable
 sudo chmod +x /usr/bin/zram.sh
 
-# edit /etc/rc.local file to run script on boot
+### edit /etc/rc.local file to run script on boot
 sudo nano /etc/rc.local
 add line before exit 0
 /usr/bin/zram.sh &
